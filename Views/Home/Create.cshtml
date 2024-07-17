@@ -1,0 +1,59 @@
+﻿@model clocktosWebForm.Models.Employee
+<head>
+    <link href="~/css/empform.css" rel="stylesheet" />
+</head>
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div id="Containment" style="display: flex;">
+                <div class="wrapper">
+                    <div class="form-field d-flex align-items-center">
+                        <input asp-for="Emp_Name" placeholder="Employee Name" />
+                        <span asp-validation-for="Emp_Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-field d-flex align-items-center">
+                        <input asp-for="Emp_Mail" placeholder="Employee Mail" />
+                        <span asp-validation-for="Emp_Mail" class="text-danger"></span>
+                    </div>
+                    <div class="sas">
+                        <label asp-for="Gender" class="form-group align-items-center"></label>
+                        <div class="d-flex align-items-center info-color">
+                            <div class="form-check me-2">
+                                <input class="form-check-input" type="radio" asp-for="Gender" value="Male" id="genderMale" />
+                                <label class="form-check-label" for="genderMale">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" asp-for="Gender" value="Female" id="genderFemale" />
+                                <label class="form-check-label" for="genderFemale">Female</label>
+                            </div>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-field d-flex align-items-center">
+                        <input asp-for="Experience" placeholder="Experience" />
+                        <span asp-validation-for="Experience" class="text-danger"></span>
+                    </div>
+                    <div class="form-field d-flex align-items-center">
+                        <input asp-for="Emp_Ctc" placeholder="Cost To Company" />
+                        <span asp-validation-for="Emp_Ctc" class="text-danger"></span>
+                    </div>
+                    <div class="form-field d-flex align-items-center">
+                        <input asp-for="Net_Salary" placeholder="Net Salary" />
+                        <span asp-validation-for="Net_Salary" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <!-- Centering the submit button -->
+                        <input type="submit" value="Create" class="btn btn-info" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,66 @@
+﻿
+.sas {
+    margin-left: 8px;
+    margin-top: -11px;
+    margin-bottom:5px;
+}
+.wrapper {
+    max-width: 350px;
+    min-height: 400px;
+    margin: 0px auto;
+    padding: 32px 30px 30px 30px;
+    background-color: #e8f0fe;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+    .wrapper .name {
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: 1.3px;
+        padding-left: 10px;
+        color: #555;
+    }
+
+    .wrapper .form-field input {
+        width: 100%;
+        display: block;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 1.2rem;
+        color: #666;
+        padding: 10px 15px 10px 10px;
+        /* border: 1px solid red; */
+    }
+
+    .wrapper .form-field {
+        padding-left: 2px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    }
+
+ .wrapper .form-field .fas {
+            color: #555;
+ }
+
+
+.info-color .form-check-input:checked {
+    background-color: #17a2b8; /* Bootstrap 'info' color */
+    border-color: #17a2b8; /* Bootstrap 'info' color */
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    -webkit-text-fill-color: #666;
+    border-radius: 20px;
+    background-color: #ecf0f3 !important; /* Match the wrapper background color */
+}
